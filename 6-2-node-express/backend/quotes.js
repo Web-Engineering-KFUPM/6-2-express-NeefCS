@@ -7,6 +7,12 @@ const quotes = [
   "Programming isn’t about what you know; it’s about what you can figure out."
 ];
 
+// ===============================================================
+// TODO 3: Export a Function to Get a Random Quote
+// ===============================================================
+// Goal: Export a helper function named getRandomQuote() that returns one random quote from the array.
+
 export function getRandomQuote() {
- return {/*write code to here*/}
+  const index = getRandomInt(quotes.length); // pick random index
+  return quotes[index]; // return random quote
 }
